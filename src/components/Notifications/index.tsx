@@ -36,7 +36,7 @@ export default function Notifications() {
     return () => {
       clearTimeout(timeId);
     };
-  }, [msg]);
+  }, [msg, dispatch]);
 
   return (
     <>
@@ -81,6 +81,7 @@ export default function Notifications() {
               >
                 <img
                   src={check}
+                  alt="Success"
                   style={{ color: "#fff", transform: "rotate(-180deg)" }}
                 />
               </Box>
@@ -154,6 +155,7 @@ export default function Notifications() {
               >
                 <img
                   src={error}
+                  alt="Error"
                   style={{ color: "#fff", transform: "rotate(-180deg)" }}
                 />
               </Box>

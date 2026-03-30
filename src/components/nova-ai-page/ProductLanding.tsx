@@ -730,16 +730,16 @@ const ProductLanding: React.FC = () => {
               <h4>Product</h4>
               <ul>
                 <li>
-                  <a href="#">Features</a>
+                  <a href="#!">Features</a>
                 </li>
                 <li>
-                  <a href="#">Integrations</a>
+                  <a href="#!">Integrations</a>
                 </li>
                 <li>
-                  <a href="#">Pricing</a>
+                  <a href="#!">Pricing</a>
                 </li>
                 <li>
-                  <a href="#">Changelog</a>
+                  <a href="#!">Changelog</a>
                 </li>
               </ul>
             </div>
@@ -748,16 +748,16 @@ const ProductLanding: React.FC = () => {
               <h4>Company</h4>
               <ul>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="#!">About Us</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#!">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Careers</a>
+                  <a href="#!">Careers</a>
                 </li>
                 <li>
-                  <a href="#">Press</a>
+                  <a href="#!">Press</a>
                 </li>
               </ul>
             </div>
@@ -766,16 +766,16 @@ const ProductLanding: React.FC = () => {
               <h4>Support</h4>
               <ul>
                 <li>
-                  <a href="#">Docs</a>
+                  <a href="#!">Docs</a>
                 </li>
                 <li>
-                  <a href="#">Status</a>
+                  <a href="#!">Status</a>
                 </li>
                 <li>
-                  <a href="#">Community</a>
+                  <a href="#!">Community</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="#!">Contact Us</a>
                 </li>
               </ul>
             </div>
