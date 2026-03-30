@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 const styles = `
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap');
 
   *, *::before, *::after {
     box-sizing: border-box;
@@ -23,7 +23,7 @@ const styles = `
   }
 
   .lp-root {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
@@ -46,7 +46,7 @@ const styles = `
   }
 
   .lp-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 800;
     font-size: 1.4rem;
     letter-spacing: -0.5px;
@@ -87,7 +87,7 @@ const styles = `
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: opacity 0.2s, transform 0.2s;
   }
 
@@ -144,7 +144,7 @@ const styles = `
   }
 
   .lp-hero-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 800;
     line-height: 1.1;
@@ -185,7 +185,7 @@ const styles = `
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: var(--glow);
   }
@@ -204,7 +204,7 @@ const styles = `
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: border-color 0.2s, background 0.2s;
   }
 
@@ -280,7 +280,7 @@ const styles = `
   }
 
   .lp-device-label {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: rgba(255,255,255,0.7);
@@ -321,7 +321,7 @@ const styles = `
   }
 
   .lp-stat-num {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -351,7 +351,7 @@ const styles = `
   }
 
   .lp-section-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
     font-weight: 800;
     letter-spacing: -1px;
@@ -409,7 +409,7 @@ const styles = `
   .lp-fi-3 { background: rgba(67,233,123,0.15); }
 
   .lp-feature-name {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
@@ -444,7 +444,7 @@ const styles = `
   }
 
   .lp-footer-col h4 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
