@@ -16,7 +16,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ProductLanding from "./components/nova-ai-page/ProductLanding";
 
 const config = getDefaultConfig({
-  appName: "Dex Demo",
+  appName: "Nova AI",
   projectId: "YOUR_PROJECT_ID", // Replace with your WalletConnect Project ID
   chains: [mainnet],
   transports: {
