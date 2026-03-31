@@ -621,6 +621,10 @@
     max-width: 340px;
   }
 
+  .lp-features {
+    padding: 4rem 5vw;
+  }
+
   .lp-features-grid {
     grid-template-columns: 1fr;
   }
@@ -672,6 +676,9 @@
   }
   .lp-stats {
     gap: 1.5rem;
+  }
+  .lp-features {
+    padding: 2.5rem 5vw;
   }
   .lp-stat-num {
     font-size: 1.5rem;

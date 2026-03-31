@@ -40,7 +40,7 @@ const NovaAbout: React.FC = () => {
           </div>
         </section>
 
-        <section className="lp-features" style={{ paddingTop: "2rem" }}>
+        <section className="lp-features" style={{ paddingTop: "0rem" }}>
           <div className="lp-section-label">Our Story</div>
           <h2 className="lp-section-title">
             Empowering businesses with AI-driven Insights
