@@ -40,7 +40,7 @@ const Navigation: FC = () => {
             fontWeight: 700,
             alignItems: "center",
             justifyContent: "center",
-            px: { xs: 0, lg: 3 },
+            px: { xs: 0, lg: 2 },
             mb: { xs: 3, lg: 0 },
             fontSize: "20px",
             ...destination === "/" && { color: "primary.main" },
