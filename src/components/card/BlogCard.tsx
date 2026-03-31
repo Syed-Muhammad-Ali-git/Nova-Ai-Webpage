@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   Box,
   Card,
@@ -36,8 +36,11 @@ const BlogCard = ({ item }: any) => {
     seconds: 0,
   });
 
+  const intervalRef = useRef<number | null>(null);
+
   function startCountdown(distance: any) {
-    const interval = setInterval(() => {
+    // store interval id so we can clear on unmount
+    intervalRef.current = window.setInterval(() => {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -46,13 +49,16 @@ const BlogCard = ({ item }: any) => {
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (distance <= 0) {
-        clearInterval(interval);
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current);
+          intervalRef.current = null;
+        }
       }
 
       setTimer({ days, hours, minutes, seconds });
 
       distance -= 1000;
-    }, 1000);
+    }, 1000) as unknown as number;
   }
 
   const handleDeleteBlog = (status: boolean) => {
@@ -68,6 +74,13 @@ const BlogCard = ({ item }: any) => {
 
   useEffect(() => {
     startCountdown(item.distance);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
   }, []);
 
   return (

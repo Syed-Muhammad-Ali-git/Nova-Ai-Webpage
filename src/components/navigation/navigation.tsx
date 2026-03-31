@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { navigations } from "./navigation.data";
 import { Link } from "@mui/material";
 import { useLocation } from "react-router-dom";
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 type NavigationData = {
   path: string;
@@ -18,12 +18,12 @@ const Navigation: FC = () => {
     <Box
       sx={{
         display: "flex",
-        flexFlow: "wrap",
+        flexFlow: "nowrap",
         justifyContent: "end",
-        flexDirection: { xs: "column", lg: "row" }
+        flexDirection: { xs: "column", lg: "row" },
       }}
     >
-      {navigations.map(({ path: destination, label }: NavigationData) =>
+      {navigations.map(({ path: destination, label }: NavigationData) => (
         <Box
           key={label}
           component={Link}
@@ -43,12 +43,12 @@ const Navigation: FC = () => {
             px: { xs: 0, lg: 2 },
             mb: { xs: 3, lg: 0 },
             fontSize: "20px",
-            ...destination === "/" && { color: "primary.main" },
+            ...(destination === "/" && { color: "primary.main" }),
             "& > div": { display: "none" },
             "&.current>div": { display: "block" },
             "&:hover": {
-              color: "text.disabled"
-            }
+              color: "text.disabled",
+            },
           }}
         >
           <Box
@@ -56,7 +56,7 @@ const Navigation: FC = () => {
               position: "absolute",
               top: 12,
               transform: "rotate(3deg)",
-              "& img": { width: 44, height: "auto" }
+              "& img": { width: 44, height: "auto" },
             }}
           >
             {/* eslint-disable-next-line */}
@@ -64,14 +64,14 @@ const Navigation: FC = () => {
           </Box>
           {label}
         </Box>
-      )}
+      ))}
       <Box
         sx={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          px: { xs: 0, lg: 3 },
-          mb: { xs: 3, lg: 0 },
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          // px: { xs: 0, lg: 3 },
+          // mb: { xs: 3, lg: 0 },
         }}
       >
         <ConnectButton />

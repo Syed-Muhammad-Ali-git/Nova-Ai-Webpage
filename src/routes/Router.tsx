@@ -9,6 +9,9 @@ const Login = Loadable(lazy(() => import("../views/login/Login")));
 const LandingCraftDashboard = Loadable(
   lazy(() => import("../views/landingCraft/landingCraft")),
 );
+const LandingCraftAbout = Loadable(
+  lazy(() => import("../views/landingCraft-aboutPage/About")),
+);
 const Notfound = Loadable(
   lazy(() => import("../components/errorboundary/404")),
 );
@@ -23,6 +26,7 @@ const Router = [
       { path: "/sell", exact: true, element: <Sell /> },
       { path: "/login", exact: true, element: <Login /> },
       { path: "/auth/404", exact: true, element: <Notfound /> },
+      { path: "/landingCraft/about",  element: <LandingCraftAbout /> },
       { path: "/landingCraft", element: <LandingCraftDashboard /> },
       { path: "*", element: <Navigate to="/auth/404" /> },
     ],

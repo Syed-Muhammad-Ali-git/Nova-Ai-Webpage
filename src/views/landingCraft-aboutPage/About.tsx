@@ -9,7 +9,7 @@ const NovaAbout: React.FC = () => {
         <div
           className="lp-logo"
           style={{ cursor: "pointer" }}
-          onClick={() => window.location.replace("/")}
+          onClick={() => window.location.replace("/landingCraft")}
         >
           Landing<span>Craft</span>
         </div>
