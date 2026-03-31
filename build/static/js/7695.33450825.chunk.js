@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkassessment_project=self.webpackChunkassessment_project||[]).push([[7695],{7695:(s,e,t)=>{t.r(e),t.d(e,{default:()=>a.n});var a=t(42499)}}]);

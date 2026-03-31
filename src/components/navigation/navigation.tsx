@@ -4,6 +4,7 @@ import { navigations } from "./navigation.data";
 import { Link } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 type NavigationData = {
   path: string;
@@ -13,6 +14,7 @@ type NavigationData = {
 const Navigation: FC = () => {
   const location = useLocation();
   const currentPath = location.pathname;
+  const isMobile = useMediaQuery("(max-width: 1255px)");
 
   return (
     <Box
@@ -20,7 +22,8 @@ const Navigation: FC = () => {
         display: "flex",
         flexFlow: "nowrap",
         justifyContent: "end",
-        flexDirection: { xs: "column", lg: "row" },
+        flexDirection: "row",
+        "@media (max-width: 1255px)": { flexDirection: "column" },
       }}
     >
       {navigations.map(({ path: destination, label }: NavigationData) => (
@@ -31,7 +34,7 @@ const Navigation: FC = () => {
           sx={{
             display: "inline-flex",
             position: "relative",
-            color: currentPath === destination ? "" : "white",
+            color: currentPath === destination ? "primary.main" : (isMobile ? "text.primary" : "white"),
             lineHeight: "30px",
             letterSpacing: "3px",
             cursor: "pointer",
@@ -40,8 +43,12 @@ const Navigation: FC = () => {
             fontWeight: 700,
             alignItems: "center",
             justifyContent: "center",
-            px: { xs: 0, lg: 2 },
-            mb: { xs: 3, lg: 0 },
+            px: 2,
+            mb: 0,
+            "@media (max-width: 1255px)": {
+              px: 0,
+              mb: 3
+            },
             fontSize: "20px",
             ...(destination === "/" && { color: "primary.main" }),
             "& > div": { display: "none" },

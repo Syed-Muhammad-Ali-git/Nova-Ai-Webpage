@@ -58,7 +58,7 @@ const LandingCraftHeader: React.FC = () => {
         }}
       >
         <button className="lp-cta-btn" onClick={() => navigate("/dashboard")}>
-          ← Back to Home
+          ← Back to &nbsp; eSTOKKYAM
         </button>
         <button className="lp-cta-btn">Get Started →</button>
       </div>

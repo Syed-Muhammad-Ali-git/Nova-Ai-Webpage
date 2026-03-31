@@ -24,7 +24,7 @@ const Header: FC = () => {
   const username = useAppSelector(selectLoginUser);
   const navigate = useNavigate();
 
-  const matchMobileView = useMediaQuery(breakpoints.down("lg"));
+  const matchMobileView = useMediaQuery("(max-width: 1255px)");
   return (
     <Box sx={{ backgroundColor: "#173039" }}>
       <Container
@@ -44,8 +44,8 @@ const Header: FC = () => {
           }}
         >
           <Logo />
-          <Box sx={{ ml: "auto", display: { md: "inline-flex", lg: "none" } }}>
-            <IconButton onClick={() => setVisibleMenu(!visibleMenu)}>
+          <Box sx={{ ml: "auto", display: "none", "@media (max-width: 1255px)": { display: "inline-flex" } }}>
+            <IconButton onClick={() => setVisibleMenu(!visibleMenu)} sx={{ color: "white" }}>
               <Menu />
             </IconButton>
           </Box>
@@ -55,14 +55,15 @@ const Header: FC = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              flexDirection: { xs: "column", lg: "row" },
+              flexDirection: "row",
+              "@media (max-width: 1255px)": { flexDirection: "column" },
               transition: theme => theme.transitions.create(["top"]),
               ...matchMobileView && {
                 py: 6,
                 backgroundColor: "background.paper",
                 zIndex: "appBar",
                 position: "fixed",
-                height: { xs: "100vh", lg: "auto" },
+                height: "100vh",
                 top: visibleMenu ? 0 : "-120vh",
                 left: 0
               }
@@ -76,7 +77,8 @@ const Header: FC = () => {
                 sx={{
                   position: "fixed",
                   top: 10,
-                  right: 10
+                  right: 10,
+                  color: "text.primary"
                 }}
                 onClick={() => setVisibleMenu(!visibleMenu)}
               >
