@@ -18,6 +18,7 @@
   min-height: 100vh;
   overflow-x: hidden;
   letter-spacing: -0.01em; /* Kept font refinement */
+  text-align: left; /* Fix default center alignment */
 }
 
 /* ── HEADER ── */
