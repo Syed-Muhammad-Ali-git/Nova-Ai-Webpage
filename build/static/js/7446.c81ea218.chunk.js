@@ -1,1 +1,0 @@
-(self.webpackChunkassessment_project=self.webpackChunkassessment_project||[]).push([[7446],{6948:()=>{},47790:()=>{},60782:()=>{}}]);

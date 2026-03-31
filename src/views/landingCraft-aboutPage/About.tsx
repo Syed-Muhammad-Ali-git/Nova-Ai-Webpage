@@ -36,28 +36,25 @@ const NovaAbout: React.FC = () => {
         <section className="lp-features">
           <div className="lp-section-label">Our Story</div>
           <h2 className="lp-section-title">
-            Built by thinkers, for innovators
+            Empowering businesses with AI-driven Insights
           </h2>
           <div className="lp-features-grid">
             <div className="lp-feature-card">
-              <div className="lp-feature-name">Founded 2024</div>
+              <div className="lp-feature-name">Our Vision</div>
               <p className="lp-feature-text">
-                Started in a small garage in San Francisco, LandingCraft has
-                grown from a prototype to a platform serving thousands of users.
+                To create a world where every business, regardless of size, can leverage the power of advanced data analytics and AI to drive meaningful growth and innovation.
               </p>
             </div>
             <div className="lp-feature-card">
-              <div className="lp-feature-name">Integrity First</div>
+              <div className="lp-feature-name">Who We Are</div>
               <p className="lp-feature-text">
-                We believe in ethical AI. Your data is your property, and we
-                ensure it stays that way with SOC-2 compliance.
+                We are a team of data scientists, engineers, and creatives passionate about solving complex problems. LandingCraft was born out of a desire to simplify the data landscape.
               </p>
             </div>
             <div className="lp-feature-card">
-              <div className="lp-feature-name">Scale Daily</div>
+              <div className="lp-feature-name">What We Do</div>
               <p className="lp-feature-text">
-                From startups to enterprises, LandingCraft scales with your
-                needs effortlessly.
+                We provide a unified platform that turns raw operational data into actionable intelligence. With instant automation and predictive analytics, you stay ahead of the curve.
               </p>
             </div>
           </div>
@@ -65,9 +62,9 @@ const NovaAbout: React.FC = () => {
 
         <section className="lp-stats">
           {[
-            { num: "12+", label: "Global Offices" },
-            { num: "500+", label: "Employees" },
-            { num: "1B+", label: "Predictions/Day" },
+            { num: "2024", label: "Year Founded" },
+            { num: "5+", label: "Global Offices" },
+            { num: "10K+", label: "Happy Customers" },
           ].map((s) => (
             <div className="lp-stat" key={s.label}>
               <div className="lp-stat-num">{s.num}</div>

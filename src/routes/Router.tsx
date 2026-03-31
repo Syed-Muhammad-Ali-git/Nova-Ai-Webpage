@@ -26,10 +26,16 @@ const Router = [
       { path: "/sell", exact: true, element: <Sell /> },
       { path: "/login", exact: true, element: <Login /> },
       { path: "/auth/404", exact: true, element: <Notfound /> },
-      { path: "/landingCraft/about",  element: <LandingCraftAbout /> },
-      { path: "/landingCraft", element: <LandingCraftDashboard /> },
       { path: "*", element: <Navigate to="/auth/404" /> },
     ],
+  },
+  {
+    path: "/landingCraft",
+    element: <LandingCraftDashboard />,
+  },
+  {
+    path: "/landingCraft/about",
+    element: <LandingCraftAbout />,
   },
 ];
 
