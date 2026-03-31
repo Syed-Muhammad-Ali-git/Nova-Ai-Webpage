@@ -134,7 +134,7 @@ const ProductLanding: React.FC = () => {
         </section>
 
         {/* ── SAMPLE PRODUCT ── */}
-        <section className="lp-features" id="sample-product" style={{ paddingTop: "3rem" }}>
+        <section className="lp-features" id="sample-product" style={{ paddingTop: "2rem" }}>
           <div className="lp-section-label">Live Example</div>
           <h2 className="lp-section-title">See our technology in action</h2>
           
